@@ -1,0 +1,314 @@
+/* Плавный скролл */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Меню */
+.navbar {
+    background-color: #d85a9b;
+}
+
+.logo-link {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffe4f0;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+    color: #ffe4f0;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #ffb6c1;
+    background-color: rgba(255, 182, 193, 0.3);
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    background-color: #ffe4f0;
+    border-radius: 8px;
+}
+
+.dropdown-item {
+    color: #d85a9b;
+    transition: all 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(216, 44, 104, 0.2);
+    color: #d85a9b;
+}
+
+
+/* Видео-блок */
+.hero-video-block {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video-block video.bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-video-block .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(216, 90, 155, 0.3);
+}
+
+.hero-video-block .hero-content {
+    color: #fff;
+}
+
+/* Галерея */
+.gallery-section {
+    background-color: #ffe4f0;
+}
+
+.gallery-section h2 {
+    color: #d85a9b;
+    font-weight: 700;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Блоки с фоном */
+#history,
+#reviews,
+#calculator,
+.contact-section {
+    background-color: #ffe4f0;
+    padding: 60px 15px;
+}
+
+#history h2,
+#reviews h2,
+#calculator h2,
+.contact-section h2 {
+    color: #d85a9b;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Калькулятор */
+.hidden {
+    display: none;
+}
+
+/* Форма */
+.contact-section .form-group {
+    margin-bottom: 16px;
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #374151;
+    font-size: 0.9rem;
+}
+
+.contact-section label.required::after {
+    content: " *";
+    color: #ef4444;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.2s;
+    background: white;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+    outline: none;
+    border-color: #d85a9b;
+    box-shadow: 0 0 0 3px rgba(216, 90, 155, 0.1);
+}
+
+.contact-section textarea {
+    height: 80px;
+    resize: vertical;
+    min-height: 80px;
+}
+
+.contact-section .submit-btn {
+    background: #d85a9b;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+}
+
+.contact-section .submit-btn:hover {
+    background: #c75a9a;
+}
+
+.contact-section .message {
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.contact-section .message.success {
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.contact-section .message.error {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+/* Адаптивность */
+@media (max-width:767px) {
+    .navbar-nav {
+        background-color: #d85a9b;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.2rem;
+        padding: 0.7rem 1rem;
+    }
+
+    .dropdown-menu {
+        position: static;
+        float: none;
+        display: block;
+        margin: 0;
+        background-color: #ffe4f0;
+    }
+}
+
+/* История открытия */
+.story-section {
+    background-color: #ffe4f0;
+    padding: 80px 15px;
+}
+
+.story-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(216, 90, 155, 0.2);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d85a9b;
+    margin-bottom: 30px;
+}
+
+.story-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #5a2a44;
+    margin-bottom: 20px;
+}
+
+.accent {
+    color: #d85a9b;
+    font-weight: 600;
+}
+
+/* Отзывы */
+.reviews-section {
+    background-color: #ffe4f0;
+    padding: 80px 15px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(216, 90, 155, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #5a2a44;
+    margin-bottom: 15px;
+}
+
+.review-author {
+    display: block;
+    text-align: right;
+    font-weight: 600;
+    color: #d85a9b;
+}
+
+/* Калькулятор — фон на всю ширину */
+.calculator-section {
+    width: 100%;
+    background-color: #ffe4f0;
+    /* нежно-розовый */
+    padding: 80px 15px;
+}
+
+/* Сам блок калькулятора */
+.calculator-box {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(216, 90, 155, 0.25);
+}
